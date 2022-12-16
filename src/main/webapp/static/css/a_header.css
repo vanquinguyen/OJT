@@ -1,0 +1,148 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+  transition: all 0.5s;
+}
+#header.scrollHeader {
+  background: #fff;
+  transition: all 0.5s;
+}
+#header.scrollHeader a {
+  color: #2d2d2d;
+}
+#header.scrollHeader .navmenuTop_block .logo img {
+  filter: unset;
+}
+#header.scrollHeader .navmenuTop_block .searchTop .btn {
+  color: #2d2d2d;
+}
+
+.ct_container {
+  margin: auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  width: 100%;
+  min-width: 980px;
+  margin-right: 0;
+}
+
+.navmenuTop_block {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+.navmenuTop_block .logo {
+  max-width: 60px;
+}
+.navmenuTop_block .logo img {
+  filter: brightness(0) invert(1);
+}
+.navmenuTop_block .navmenu {
+  display: flex;
+  align-items: center;
+  width: 85%;
+}
+.navmenuTop_block .navmenu > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navmenuTop_block .navmenu > ul > li {
+  text-align: right;
+  position: relative;
+  padding: 0 15px;
+}
+.navmenuTop_block .navmenu > ul > li > a {
+  padding: 10px;
+  font-size: 22px;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 1120px) {
+  .navmenuTop_block .navmenu > ul > li > a {
+    font-size: 13px;
+  }
+}
+.navmenuTop_block .navmenu > ul > li > a:hover {
+  font-weight: bold;
+}
+.navmenuTop_block .navmenu > ul > li > .submenu {
+  position: absolute;
+  min-width: 280px;
+  background: #fff;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transform: translateY(10px);
+  opacity: 0;
+  padding: 0.5rem 0;
+  visibility: hidden;
+  box-shadow: 0px 0px 15px -5px #505050;
+}
+.navmenuTop_block .navmenu > ul > li > .submenu > li {
+  border-bottom: 1px dashed #dcdcdc;
+}
+.navmenuTop_block .navmenu > ul > li > .submenu > li:last-child {
+  border-bottom: 0;
+}
+.navmenuTop_block .navmenu > ul > li > .submenu > li > a {
+  color: #000;
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+.navmenuTop_block .navmenu > ul > li > .submenu > li > a:hover {
+  font-weight: bold;
+  color: #2EBDB7;
+}
+.navmenuTop_block .navmenu > ul > li:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s;
+}
+.navmenuTop_block .navmenu .searchTop {
+  position: relative;
+}
+.navmenuTop_block .navmenu .searchTop .btn {
+  color: #fff;
+  font-size: 22px;
+}
+.navmenuTop_block .navmenu .searchTop_dropSearch {
+  position: absolute;
+  margin-top: 10px;
+  z-index: 1;
+  width: 250px;
+  top: 100%;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.2s;
+  opacity: 0;
+  right: 0;
+}
+.navmenuTop_block .navmenu .searchTop_dropSearch.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.2s;
+}
+.navmenuTop_block .navmenu .searchTop_dropSearch input {
+  border-radius: 40px;
+  border: none;
+  font-size: 13px;
+  box-shadow: 0px 0 20px -5px #a0a0a0;
+}
+.navmenuTop_block .navmenu .searchTop_dropSearch input:focus {
+  border: none;
+  box-shadow: 0px 0 20px -5px #a0a0a0;
+} 
+
+

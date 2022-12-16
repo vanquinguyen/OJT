@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="master"
+		template="/WEB-INF/views/layout/master-layout.jsp">
+		<put-attribute name="sidebarmenu"
+			value="/WEB-INF/views/layout/sidebarmenu.jsp"></put-attribute>
+		<put-attribute name="footer"
+			value="/WEB-INF/views/layout/footer.jsp"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/layout/body.jsp"></put-attribute>	
+	</definition>
+	<definition name="home" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/home.jsp"></put-attribute>
+	</definition>
+	<definition name="course-listUser" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/course/course-listUser.jsp"></put-attribute>
+	</definition>
+	<definition name="bangchucai" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/course/bangchucai.jsp"></put-attribute>
+	</definition>
+	<definition name="hiragana" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/course/hiragana.jsp"></put-attribute>
+	</definition>
+	<definition name="course-action" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/course/course-action.jsp"></put-attribute>
+	</definition>
+	<definition name="lession-action" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/course/lession-action.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="gioithieu" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/gioithieu.jsp"></put-attribute>
+	</definition>
+	
+	<!--exam  -->
+	<definition name="list-level" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/exam/list-level.jsp"></put-attribute>
+	</definition>
+	<definition name="list-exam" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/exam/list-exam.jsp"></put-attribute>
+	</definition>
+	<definition name="result" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/exam/result.jsp"></put-attribute>
+	</definition>
+	
+	
+	
+	
+	
+	<!-- admin -->
+	
+	<definition name="adminMaster"
+		template="/WEB-INF/views/admin/adminLayout/master-layout.jsp">
+		<put-attribute name="sidebarAdmin"
+			value="/WEB-INF/views/admin/adminLayout/sidebar.jsp"></put-attribute>
+		<put-attribute name="footerAdmin"
+			value="/WEB-INF/views/admin/adminLayout/footer.jsp"></put-attribute>
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/adminLayout/body.jsp"></put-attribute>
+		<put-attribute name="top-navAdmin"
+			value="/WEB-INF/views/admin/adminLayout/top-nav.jsp"></put-attribute>	
+	</definition>
+	
+	<definition name="admin" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin.jsp"></put-attribute>
+	</definition>
+
+	<definition name="access-denied"
+		template="/WEB-INF/views/admin/error-page/access-denied.jsp">
+	</definition>
+	<definition name="user-list" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/users/user-list.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="user-action" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/users/user-action.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="role-action" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/role/role-action.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="role-list" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/role/role-list.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="menu-list" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/menu/menu-list.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="menu-permission" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/menu/menu-permission.jsp">
+		</put-attribute>
+	</definition>
+	<!--Chapter-->
+	<definition name="chapter-list" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/chapter/chapter-list.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="chapter-action" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/chapter/chapter-action.jsp">
+		</put-attribute>
+	</definition>
+	<!-- Lesson -->
+	<definition name="lesson-list" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/lesson/lesson-list.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="lesson-action" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/lesson/lesson-action.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="category-action" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/course/category-action.jsp">
+		</put-attribute>
+	</definition>
+	<definition name="category-list" extends="adminMaster">
+		<put-attribute name="bodyAdmin"
+			value="/WEB-INF/views/admin/course/category-list.jsp">
+		</put-attribute>
+	</definition>
+	
+	 <definition name="profile" extends="master">
+		<put-attribute name="body"
+			value="/WEB-INF/views/profile/profile.jsp"></put-attribute>
+	</definition> 
+	
+	<!-- <definition name="profile"
+		template="/WEB-INF/views/profile/profile.jsp">
+	</definition> -->
+	
+</tiles-definitions>

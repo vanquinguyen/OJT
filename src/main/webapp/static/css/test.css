@@ -1,0 +1,213 @@
+
+/* body */
+body {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    background-color: rgb(253 243 243);
+  }
+  
+  
+  .layout_padding {
+    padding: 90px 0;
+  }
+  
+  .layout_padding2 {
+    padding: 45px 0;
+  }
+  
+  .layout_padding2-top {
+    padding-top: 45px;
+  }
+  
+  .layout_padding2-bottom {
+    padding-bottom: 45px;
+  }
+  
+  .layout_padding-top {
+    padding-top: 90px;
+  }
+  
+  .layout_padding-bottom {
+    padding-bottom: 90px;
+  }
+  /* Css header phần nội dung */
+  .heading_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  
+  .heading_container h3 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 15px;
+    padding-top: 50px;
+  }
+  
+  .heading_container h3::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 1px;
+    height: 65px;
+    background-color: #4bc5b8;
+    -webkit-transform: translateY(-50%) rotate(20deg);
+            transform: translateY(-50%) rotate(20deg);
+  }
+  .heading_container h8 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 28px;
+    padding-top: 25px;
+  }
+  .heading_container h8::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 1px;
+    height: 65px;
+    background-color: #4bc5b8;
+    -webkit-transform: translateY(-50%) rotate(20deg);
+            transform: translateY(-50%) rotate(20deg);
+  }
+  /*header section*/
+  
+  .header_section .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+    background:rgb(209, 205, 205);
+  }
+  
+  .header_section .nav_container {
+    margin: 0 auto;
+  }
+  /* thanh menu */
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 45px 15px 15px;
+    color: black;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  /* .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    background-color: #cdecec;
+    /* margin-top: 10px; */
+  
+   
+  
+  .custom_nav-container .form-inline {
+    padding-top: 30px;
+  }
+  
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    color: initial;
+  }
+  
+  .btn,
+  .btn:focus {
+    outline: none !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .user_option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .custom_nav-container .nav_search-btn {
+    background-image: url(../images/search-icon.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: none;
+  }
+  
+  .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  
+  .navbar-brand h3 {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .navbar-brand span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #133e3f;
+    margin-top: -10px;
+  }
+  
+  .custom_nav-container {
+    z-index: 99999;
+    padding: 0;
+  }
+  
+  .custom_nav-container .navbar-toggler {
+    outline: none;
+  }
+  
+  .custom_nav-container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../images/menu.png);
+    background-size: 42px;
+  }
+  
+  #button{
+    background: black;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 2rem;
+}
+
+.test p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 2rem;
+    margin-top: 20px;
+}
+  
+.content{
+  margin-left: 50%;
+  font-size: 50px;
+  
+}
+  
+  

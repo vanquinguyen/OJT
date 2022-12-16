@@ -1,0 +1,264 @@
+/* khoa N4 chi tiết  */
+.main_center{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* main_left */
+.main_left{
+    width: 700px;
+}
+
+.course_detail-title{
+    margin: 35px 0 15px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 100;
+    color: #404040;
+}
+.course_detail-title a b:hover{
+    color: var(--hover-color);   
+}
+.cover_container{
+    width: 100%;
+    margin-bottom: 25px;
+    height: 455px;
+    margin-top: 45px;
+}
+.cover_container img{
+    width: 700px;
+    height: 395px;
+    object-fit: cover;
+}
+.btn_play-icon{
+    margin-top: -230px;
+    margin-left: 320px;
+    position: absolute;
+    font-size: 50px;
+    padding: 4px 30px;
+    border-radius: 50%;
+    opacity: 0.9;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0,0,0,.8);
+    color: #ffff;
+    cursor:pointer;
+}
+.btn_play-icon i{
+    font-size: 28px;
+    margin-top: 18px;
+}
+.btn_play-icon:hover{
+    background: #fff;
+    color: #588d3f;
+}
+#course_ifr{
+    width: 700px;
+    height: 395px;
+    display: none;
+    margin-top: -398px;
+    position: absolute;
+   
+}
+.server_location-container{
+    width: 100%;
+    padding: 20px 0;
+}
+.server_location{
+    background-color: #588d3f;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.nav_course-tab{
+    width: 100%;
+    background: #d2e5b2;
+    margin-bottom: 30px;
+    display: flex;
+}
+.nav_course-tab li{
+    width: 50%;
+    font-size: 18px;
+}
+.nav_course-tab li a{
+    padding: 10px;
+    padding-left: 20px;
+}
+.intro_tab a{
+    display: block;
+    background: #588d3f;
+    color: #fff;
+    border-radius: 0;
+}
+.preview_tab a{
+    display: block;
+    color: #666;
+    padding: 5px 0 3px;
+}
+.course_detail-container{
+    width: 100%;
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+#course_price-container{
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px dashed #336695;
+    background: #e8f1f9;
+    margin-bottom: 20px;
+    line-height: 1.5;
+   display: block;
+}
+.info{
+    width: 100%;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+    border-bottom: 1px solid #d7e8f7
+}
+/* .intro:target .course_price-container{
+    display: block;
+}
+.preview:target .preview-course-container{
+    display: flex;
+}    */
+
+#preview-course-container{
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    padding-bottom: 60px;
+   
+}
+.course-item{
+    width: 220px;
+    position: relative;
+}
+.images img{
+ width: 100%;
+ 
+}
+.info_title a{
+    color: #eee;
+    font-size: 13px;
+}
+.info_img{
+    background: rgba(0,0,0,.6);
+    border: 0;
+    bottom: 0;
+    padding: 7px 10px 5px;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 2px;
+}
+/* main_right */
+.main_right{
+    width: 280px;
+    margin: 35px 0 0 38px;
+}
+.course_info{
+    margin-top: 62px;
+    width: 100%;
+}
+.buy_item{
+    text-align: center;
+    width: 100%;
+    padding: 0 0 30px;
+    height: 72px;
+}
+.buy_btn{
+    padding: 18px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 20px;
+    width: 100%;
+}
+.buy_btn:hover{
+    background-color: white;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+.see_more{
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.see_more:hover{
+    color: white;
+    background-color: #e74c3c;
+}
+/* list item main right */
+.course_list-container{
+    margin: 20px 0 30px;
+    width: 100%;
+}
+.block_title{
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 100%;
+    background: #588d3f;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+    padding: 10px;
+}
+.panel_group{
+    width: 100%;
+}
+.panel{
+    border: none;
+}
+.panel_heading a{
+    display: block;
+    padding: 13px 15px;
+    background-color: #69aa00;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.scroll_items{
+    overflow-y: auto;
+    transition: max-height 0.5s;
+    max-height: 0;
+}
+.panel:target .scroll_items{ /*lưu ý khi dùng target thì href của thằng header mà user click phải chỉ đến id của thằng bao quát cái header và ul, */
+   max-height: 370px;
+}
+.lesson_item a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    line-height: 1.2;
+    background-color: #d2e5b2;
+    color: #404040;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+}
+.lesson_item a:hover{
+    background-color: #ee6022;
+    color: #fff;
+}
+.study_free{
+    background: #888;
+    color: #fff;
+    border-radius: 2px;
+    padding: 3px 5px;
+    margin-left: px;
+    font-size: 11px;
+    height: 18px;
+}
+
+/* Khoa n3 chi tiết */
+
+
+
+

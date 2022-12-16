@@ -1,0 +1,154 @@
+.comment-tab {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #41A336;
+    margin-bottom: 30px;
+    
+}
+.comment-tab li {
+    box-sizing: border-box;
+    margin-left: 0 !important;
+    font-size: 18px;
+}
+.comment-tab .active > a {
+    background-color: #41A336 !important;
+    color: #fff;
+}
+.comment-tab li a {
+    color: #666;
+    padding: 6px 15px 3px 15px;
+    font-size: 25px;
+    border-radius: 0;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.nav-pills > li {
+    float: left;
+}
+
+
+
+
+.main .tab-content {
+    background: #fff;
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+}
+.main .tab-content .tab-pane {
+    min-height: 400px;
+}
+.tab-content > .active {
+    display: block;
+}
+
+.list-comments {
+    width: 100%;
+    float: left;
+    padding: 0 0 15px 0;
+}
+.list-comments .input-comment-container {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.list-comments .input-comment-container p {
+    margin-bottom: 10px;
+}
+p {
+    margin: 0;
+}
+.list-comments .input-comment-container .me-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float: left;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.list-comments .input-comment-container .pick-image {
+    padding: 7px;
+    float: left;
+    margin-left: -64px;
+    position: relative;
+    cursor: pointer;
+}
+.list-comments .input-comment-container .post-comment-btn {
+    padding: 6px 20px;
+    background-color: #41A336;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    float: left;
+    
+}
+.list-comments .input-comment-container .preview-image {
+    width: 100%;
+    float: left;
+    padding: 0 0 0 50px;
+}
+
+
+
+
+
+
+.list-comments .comment-item {
+    width: 100%;
+    float: left;
+    list-style: none;
+    border-top: 1px solid #EEE;
+    padding: 10px 0;
+}
+.list-comments .comment-item .avatar-container {
+    width: 50px;
+    height: 35px;
+    float: left;
+}
+.list-comments .comment-item .avatar-container img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.list-comments .comment-item .comment-content {
+    width: calc(100% - 90px);
+    float: left;
+}
+.list-comments .comment-item .comment-content .name {
+    margin-bottom: 0;
+    width: calc(100% - 60px);
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+.list-comments .comment-item .comment-content .name b {
+    color: #588d3f;
+    cursor: pointer;
+}
+b, strong {
+    font-weight: 700;
+}
+.list-comments .comment-item .comment-content .comment-action {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.list-comments .comment-item .comment-content .comment-action .time {
+    opacity: 0.6;
+}
+.list-comments .comment-item .comment-content .reply-container {
+    width: 100%;
+    float: left;
+}
+.collapse.in {
+    display: block;
+}
+.collapse {
+    display: none;
+}
+

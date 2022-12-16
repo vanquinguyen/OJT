@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ :root{
+     --primary-color:#588d3f;
+     --text-color:#eeeeee; /*nền xanh thì dùng*/
+     --gray-color:#d3d3d3;
+     --border-color:#f2f2f2;
+     --hover-color:#69aa00;
+
+     --header-top:41px;
+     --header-content:70px;
+     --header: calc(var(--header-top) + var(--header-content));
+ } 
+ html{
+     
+     line-height: 16px;
+     font-family: sans-serif;
+ }
+ body{
+    overflow-x: hidden;
+    color: #404040;
+ }
+ ul{
+     list-style: none;
+ }
+ 

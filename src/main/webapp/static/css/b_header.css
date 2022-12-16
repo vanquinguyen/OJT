@@ -1,0 +1,27 @@
+
+#header.headerDetail {
+  background: #fff;
+  position: static;
+}
+
+#header.headerDetail .navmenuTop .navmenu > ul > li > a {
+  color: #000;
+}
+
+#header.headerDetail .navmenuTop_block .logo img {
+  filter: unset;
+  transition: all 0.3s;
+}
+
+#header.headerDetail .navmenuTop_block .searchTop .btn {
+  color: #2d2d2d;
+}
+
+#header.headerDetail .navmenuTop_block .navmenu .btnMenu {
+  color: #2d2d2d;
+} 
+
+.navmenuTop_block .navmenu > ul > li:hover > .submenu {
+  z-index: 10;
+}
+
